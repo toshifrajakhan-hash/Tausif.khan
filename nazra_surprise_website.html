@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nazra ♡</title>
+<meta name="description" content="A little website made especially for Nazra.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+
+:root{
+  --bg:#09080d; --card:rgba(255,255,255,.065); --line:rgba(255,255,255,.11);
+  --text:#f7f3f5; --muted:#aaa3aa; --pink:#ff8fb3; --pink2:#ffd0de;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:
+  radial-gradient(circle at 15% 10%,rgba(255,120,170,.13),transparent 28%),
+  radial-gradient(circle at 90% 30%,rgba(170,110,255,.10),transparent 25%),
+  var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;
+  background-image:radial-gradient(rgba(255,255,255,.7) .7px,transparent .7px);
+  background-size:32px 32px;
+}
+main{max-width:920px;margin:auto;padding:0 20px}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:90px 0}
+.hero{text-align:center;position:relative}
+.kicker{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--pink2);margin-bottom:22px}
+h1,h2{font-family:"Playfair Display",serif;font-weight:500}
+h1{font-size:clamp(48px,12vw,92px);line-height:.98;margin:0 0 20px}
+h2{font-size:clamp(36px,7vw,58px);margin:0 0 14px}
+p{line-height:1.75;color:var(--muted);max-width:620px;margin:12px auto}
+.sub{font-size:16px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;margin-top:28px;
+  padding:14px 23px;border:1px solid rgba(255,180,205,.35);border-radius:999px;
+  background:rgba(255,143,179,.10);color:white;text-decoration:none;cursor:pointer;
+  transition:.25s;backdrop-filter:blur(12px)
+}
+.btn:hover{transform:translateY(-2px);background:rgba(255,143,179,.18)}
+.heart{display:block;font-size:28px;margin-top:28px;animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.12);opacity:.75}}
+.center{text-align:center}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:35px}
+.card{
+  border:1px solid var(--line);background:var(--card);border-radius:22px;padding:24px;
+  text-align:left;cursor:pointer;transition:.3s;backdrop-filter:blur(15px)
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(255,143,179,.4)}
+.card .icon{font-size:25px;margin-bottom:14px}
+.card h3{margin:0 0 8px;font-size:17px}
+.card p{display:none;margin:0;font-size:14px}
+.card.open p{display:block}
+.card.open{background:rgba(255,143,179,.09)}
+.note{
+  max-width:680px;margin:35px auto 0;padding:30px;border:1px solid var(--line);
+  border-radius:26px;background:rgba(255,255,255,.045)
+}
+.like-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}
+.like{padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.045)}
+.like b{display:block;margin-bottom:6px}
+.quiz{max-width:650px;margin:30px auto}
+.question{display:none}.question.active{display:block}
+.option{
+  display:block;width:100%;margin:10px 0;padding:15px 18px;border-radius:15px;
+  border:1px solid var(--line);background:rgba(255,255,255,.045);color:white;
+  text-align:left;cursor:pointer;font:inherit
+}
+.option:hover{background:rgba(255,143,179,.10)}
+.result{min-height:30px;color:var(--pink2);margin-top:18px}
+.envelope{
+  width:110px;height:78px;margin:28px auto;border:1px solid rgba(255,180,205,.45);
+  border-radius:12px;background:rgba(255,143,179,.12);display:flex;align-items:center;
+  justify-content:center;font-size:36px;cursor:pointer;transition:.3s
+}
+.envelope:hover{transform:scale(1.05) rotate(-1deg)}
+.letter{display:none;text-align:left}.letter.show{display:block}
+.final h2{font-size:clamp(40px,8vw,70px)}
+.small{font-size:12px;color:#777;margin-top:35px}
+@media(max-width:620px){
+  .grid,.like-grid{grid-template-columns:1fr}
+  section{padding:75px 0}
+  .card{padding:20px}
+}
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+  <div>
+    <div class="kicker">A little something for you</div>
+    <h1>Hey, Nazra... ♡</h1>
+    <p class="sub">I made something for you. Nothing complicated. Just a small corner of the internet that is yours.</p>
+    <a class="btn" href="#start">Open Your Surprise →</a>
+    <span class="heart">♡</span>
+  </div>
+</section>
+
+<section id="start">
+  <div class="center">
+    <div class="kicker">Before you continue</div>
+    <h2>Take your time.</h2>
+    <p>Is website ko jaldi-jaldi mat dekhna. Kuch cheezein sirf read karne ke liye nahi hoti — feel karne ke liye hoti hain.</p>
+    <a class="btn" href="#about">Continue →</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="center" style="width:100%">
+    <div class="kicker">03 · A little about us</div>
+    <h2>A Little About Us 🫶</h2>
+    <p>Har relationship ka apna little world hota hai. Ye usi world ke kuch corners hain.</p>
+    <div class="grid">
+      <div class="card" onclick="toggleCard(this)"><div class="icon">🤍</div><h3>What Makes Us… Us</h3><p>Yahan apni real inside joke ya woh chhoti si cheez likh dena jo sirf tum dono samajhte ho.</p></div>
+      <div class="card" onclick="toggleCard(this)"><div class="icon">😂</div><h3>Our Chaos</h3><p>Ek funny habit, argument, random conversation ya woh moment jo ab bhi hasa deta hai.</p></div>
+      <div class="card" onclick="toggleCard(this)"><div class="icon">🌙</div><h3>Things Only We Understand</h3><p>Yahan koi private little reference daalna — generic line nahi. Kuch jo dekhte hi usse samajh aa jaye.</p></div>
+      <div class="card" onclick="toggleCard(this)"><div class="icon">🫂</div><h3>What I Appreciate About You</h3><p>Uski personality ki ek genuine quality likhna — looks nahi, kuch real.</p></div>
+      <div class="card" onclick="toggleCard(this)"><div class="icon">💭</div><h3>What I Hope For Us</h3><p>Simple future wish: more honest conversations, more laughter, aur better days together.</p></div>
+      <div class="card" onclick="toggleCard(this)"><div class="icon">✨</div><h3>One Thing I’ll Always Remember</h3><p>Yahan apna actual favourite moment likhna. Ye section tabhi powerful hoga jab detail real hogi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="center" style="width:100%">
+    <div class="kicker">04 · The little things</div>
+    <h2>Things I Like About You 💌</h2>
+    <p>Generic compliments nahi. The things that make you, you.</p>
+    <div class="like-grid">
+      <div class="like"><b>Your energy</b><span>Woh vibe jo normal conversation ko bhi memorable bana deti hai.</span></div>
+      <div class="like"><b>Your honesty</b><span>Jab tum seedha bolti ho, even when it's not the easiest thing to say.</span></div>
+      <div class="like"><b>Your random side</b><span>Random baatein, random reactions — somehow they become my favourite moments.</span></div>
+      <div class="like"><b>The way you care</b><span>Chhoti cheezein notice karna matters more than you probably realize.</span></div>
+      <div class="like"><b>Your stubborn side 😂</b><span>Haan, kabhi-kabhi irritating bhi. But it's still very you.</span></div>
+      <div class="like"><b>Simply… you</b><span>Not because you're perfect. Because you're genuinely yourself.</span></div>
+    </div>
+    <a class="btn" href="#quiz">Okay, one more thing →</a>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="center" style="width:100%">
+    <div class="kicker">05 · Tiny challenge</div>
+    <h2>How Well Do You Know Us? 🎮</h2>
+    <p>3 quick questions. No pressure. 😌</p>
+    <div class="quiz">
+      <div class="question active" data-answer="2">
+        <p><b>Q1 · What makes this website different?</b></p>
+        <button class="option" onclick="answer(this,1)">It is just another template</button>
+        <button class="option" onclick="answer(this,2)">It is made specifically for you</button>
+        <button class="option" onclick="answer(this,3)">I don't know 😂</button>
+      </div>
+      <div class="question" data-answer="1">
+        <p><b>Q2 · What should matter most here?</b></p>
+        <button class="option" onclick="answer(this,1)">The real little details</button>
+        <button class="option" onclick="answer(this,2)">A million animations</button>
+        <button class="option" onclick="answer(this,3)">Nothing 😭</button>
+      </div>
+      <div class="question" data-answer="3">
+        <p><b>Q3 · What's waiting at the end?</b></p>
+        <button class="option" onclick="answer(this,1)">A boring form</button>
+        <button class="option" onclick="answer(this,2)">Homework 💀</button>
+        <button class="option" onclick="answer(this,3)">A message for you</button>
+      </div>
+      <div class="result"></div>
+    </div>
+    <a class="btn" href="#letter">Continue →</a>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="center" style="width:100%">
+    <div class="kicker">06 · One last thing</div>
+    <h2>There’s One Thing I Never Properly Said… 🔐</h2>
+    <p>Tap the envelope.</p>
+    <div class="envelope" onclick="openLetter()">✉</div>
+    <div class="note letter" id="letterText">
+      <p style="color:#f7f3f5">
+        Nazra,<br><br>
+        I could have made a simple page and filled it with big words, but honestly, that wouldn't say much.
+        What matters to me is the little things — the conversations, the random moments, the way we can make an ordinary day feel different.
+        <br><br>
+        I don't know exactly what every next chapter will look like, but I know I'm grateful for the chapter we're writing right now.
+        <br><br>
+        <b>— Tausif ♡</b>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="center">
+    <div class="kicker">For you</div>
+    <h2>No matter how far apart we are…</h2>
+    <p>I'm grateful that somehow, out of everyone, our paths crossed.</p>
+    <span class="heart">♡</span>
+    <p class="small">Made with a little too much thought, for Nazra.</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+function toggleCard(card){card.classList.toggle('open')}
+function openLetter(){document.getElementById('letterText').classList.add('show')}
+let score=0;
+function answer(btn,choice){
+  const q=btn.closest('.question');
+  const correct=Number(q.dataset.answer);
+  if(choice===correct){score++; document.querySelector('.result').textContent='Correct ♡'}
+  else document.querySelector('.result').textContent='Not quite 😭';
+  setTimeout(()=>{
+    q.classList.remove('active');
+    const next=q.nextElementSibling;
+    if(next && next.classList.contains('question')) next.classList.add('active');
+    else document.querySelector('.result').textContent=`Done. Score: ${score}/3 ♡`;
+  },500);
+}
+</script>
+</body>
+</html>
